@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MultiLineTabView">
+        <attr name="column" format="integer" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemTextColors" format="color" />
+        <attr name="itemTextSize" format="dimension" />
+        <attr name="itemBottomColors" format="color" />
+    </declare-styleable>
+
+</resources>

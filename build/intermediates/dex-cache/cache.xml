@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_b2d32ebbf2639bce06f5430e9c9ed77ea33609a2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.7.5\7a15a7db50f86c4b64aa3367424a60e3a325b8f1\okhttp-2.7.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7a15a7db50f86c4b64aa3367424a60e3a325b8f1">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.7.5_626b61d78926dc1a5e092d3a50bcea54e5dfdf82\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.3.0_a7e027a1769fbd4eb1282d47d1512b0c5eb14fb0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_16c20551d1515298e4f820dbb2437cde217a49b7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_e3fb2fd0266be14f30a4f12b9d66e4ef67321ae4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.2.14\ebe0a01b96fd0151e9efabcf1b10b3cf37b02a4a\fastjson-1.2.14.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ebe0a01b96fd0151e9efabcf1b10b3cf37b02a4a">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\fastjson-1.2.14_c64e535df7c1c5c34c6dcf5ae397c2cefb653dd9\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.yolanda.nohttp\nohttp\1.0.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1bcb4670585346ba47015f5497a816795f5fa2fe">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.yolanda.nohttp-nohttp-1.0.4_01a7f7076fa108a9781fb8eefdfac163a1f3cb2d\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\0.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-drawee-0.11.0_c67e8311bd5ea89a697a905e739f750edded7135\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_1e0658ac48003bff7184afcc558d0392f86eccca\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="08f9859fce8e307665d5ffc17aa9113b96be42df">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f6a6ac83f91e26f541f72412e032567fbb233edd\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\0.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-imagepipeline-0.11.0_24261bccb07efa279db74673b7d91466423ff2eb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_f2f3e4097c997d33921ea4a923e1e4387b8330c1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\me.tatarka\gradle-retrolambda\3.3.0-beta4\46fd7b31d4ad7f482e6a29d09f70cf3945172ce1\gradle-retrolambda-3.3.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="46fd7b31d4ad7f482e6a29d09f70cf3945172ce1">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\gradle-retrolambda-3.3.0-beta4_f3335f0a93ae8a1cb0a179ad1027e1f504ced2ec\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.2\f8d87f15b94b8d74e7ccf61d7eedb558811cdb30\converter-gson-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.2_75579b05d0af85a2709ffd4d31c9c19f582300e4\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_bd46ebbcef47551901d52312d85c31492ddb7759\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_d81523285283d4105a9400c70b70735397908103\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_52c0ada3ae42ff2a1295a6f1a486cb2398ec912a\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\0.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-fbcore-0.11.0_dbc0437db445c83456343fcfd471921412972d95\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_415b5f2ff6af24d865a665b361806a2a65567ee2\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ab06218f83efcf103aa311c3f93d0b7e0e8ab284">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_efb1724fdcb1b3aa3b67e124548e298aa34fb8b9\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_44c6430a65e02e171ca312bf04151ac14a940ac0\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_796bc3624e78b7f23bd1393e46024c7617b71d89\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\0.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-imagepipeline-base-0.11.0_a6432d89f5a14ce3e6912a3014b2b51d1bc0ed30\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\adapter-rxjava\2.0.2\a60c039ba54c73d1133b72178e1b04133c73d13d\adapter-rxjava-2.0.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a60c039ba54c73d1133b72178e1b04133c73d13d">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\adapter-rxjava-2.0.2_29a54fe51d9c4116a96453e17c4a21b5a02dab3f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.6.1_f5fa6a90b76fbf6a3bb432959cae6a92a1d6a282\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\0.11.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.fresco-fresco-0.11.0_18d37cb4859b543113f38b62510efa2e5b224996\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_3508383303f6a7ba587566b235ba7ed0e272a144\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\admin\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.1.5\ece7b5d0870e66d8226dab6dcf47a2b12afff061\rxjava-1.1.5.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ece7b5d0870e66d8226dab6dcf47a2b12afff061">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.1.5_d8286f44d99e6bcc28d7618defd7bc3e73230268\classes.dex" />
+    </item>
+    <item
+        jar="F:\Github\Mymeng\app\build\intermediates\exploded-aar\io.reactivex\rxandroid\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="927e8ef5711b115b65b2f35495d77352be2b3c09">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\io.reactivex-rxandroid-1.2.0_f7cc10c860740c8f30a6bd974e2d5f60439e0596\classes.dex" />
+    </item>
+    <item
+        jar="E:\Users\admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="F:\Github\Mymeng\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_bb81541976bc058933222cf6be8c187f48d6c8c8\classes.dex" />
+    </item>
+
+</items>

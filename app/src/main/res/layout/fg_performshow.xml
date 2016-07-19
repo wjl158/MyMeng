@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fg_performshow_swipe">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/fg_performshow_MainScroll"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:background="@color/gray_0">
+
+                <!--图片轮播   -->
+                <com.jude.rollviewpager.RollPagerView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:id="@+id/fg_performshow_roll"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"/>
+
+                <!--4个导航圆形按钮-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="@dimen/large_48dp"
+                            android:layout_height="@dimen/large_48dp"
+                            android:background="@drawable/selet_home_flower_btn"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="作品棒"
+                            style="@style/HintText"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="@dimen/large_48dp"
+                            android:layout_height="@dimen/large_48dp"
+                            android:background="@drawable/selet_home_new_btn"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="推荐作品"
+                            style="@style/HintText"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="@dimen/large_48dp"
+                            android:layout_height="@dimen/large_48dp"
+                            android:background="@drawable/selet_home_tarento_btn"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="人气周棒"
+                            style="@style/HintText"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="@dimen/large_48dp"
+                            android:layout_height="@dimen/large_48dp"
+                            android:background="@drawable/selet_home_cooperate_btn"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我是评委"
+                            style="@style/HintText"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--分割线-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/area_divider_bg"
+                    android:layout_marginTop="@dimen/tiny_6dp" />
+
+                <!--全部分类 最新 热门导航-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/layout_fg_performshow_type"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <!--全部分类-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tv_fg_performshow_alltype"
+                            android:paddingLeft="@dimen/big_30dp"
+                            android:paddingRight="@dimen/small_8dp"
+                            android:text="全部分类"
+                            style="@style/NormalText"
+                            android:clickable="true"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/small_12dp"
+                            android:layout_height="@dimen/small_12dp"
+                            android:rotation="90"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_list_more_arrow"/>
+                    </LinearLayout>
+
+                    <!--最新 热门 -->
+                    <android.support.design.widget.TabLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fg_performshow_TabLayout_newhot"
+                        android:layout_weight="1.2"
+                        app:tabMode="fixed"
+                        style="@style/MyCustomTabLayout"
+
+                        >
+
+                    </android.support.design.widget.TabLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listMain"
+                    android:background="@color/gray_0"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/btnLoadMore"
+                    android:text="加载更多"
+                    android:background="@drawable/shape_button_round_corner"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_margin="10dp"
+                    />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <!--工具栏-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/fg_performshow_toolbar"
+            android:background="#00ec9504"
+            >
+            <ImageView
+                android:layout_width="@dimen/normal_24dp"
+                android:layout_height="@dimen/normal_24dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_search_box_icon"
+                android:background="@drawable/shape_search"
+                android:layout_marginTop="@dimen/small_14dp"
+                android:layout_marginLeft="@dimen/small_14dp"
+                android:alpha="1"
+                />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="@dimen/big_30dp"
+                android:id="@+id/fg_performshow_tvPos"
+                android:layout_centerInParent="true"
+                android:text="卖萌"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:alpha="1"
+                android:visibility="invisible"
+
+                />
+        </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.mymeng.activities.MainActivity"
+    android:id="@+id/lay_activity_main_root">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main_frame"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/activity_main_line"
+        ></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:id="@+id/activity_main_line"
+        android:background="@color/text_yellow"
+        android:layout_above="@+id/activity_main_lay_tab"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/activity_main_lay_tab">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_lay0"
+            android:onClick="OnClickTab">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/演绎秀"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/activity_main_tv_0"
+                android:textColor="@drawable/main_bar_bottom_text_color"
+                style="@style/HintText"/>
+            
+            <ImageView
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:src="@drawable/main_bar_bottom_img_0"
+                android:padding="1dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_main_img_0"
+                android:layout_above="@+id/activity_main_tv_0"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_lay1"
+            android:onClick="OnClickTab">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/剧本"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/activity_main_tv_1"
+                android:textColor="@drawable/main_bar_bottom_text_color"
+                style="@style/HintText"/>
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:src="@drawable/main_bar_bottom_img_1"
+                android:padding="1dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_main_img_1"
+                android:layout_above="@+id/activity_main_tv_1"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_lay2"
+            android:onClick="OnClickTab">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/声吧"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/activity_main_tv_2"
+                android:textColor="@drawable/main_bar_bottom_text_color"
+                style="@style/HintText"/>
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:src="@drawable/main_bar_bottom_img_2"
+                android:padding="1dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_main_img_2"
+                android:layout_above="@+id/activity_main_tv_2"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_lay3"
+            android:onClick="OnClickTab">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/消息"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/activity_main_tv_3"
+                android:textColor="@drawable/main_bar_bottom_text_color"
+                style="@style/HintText"/>
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:src="@drawable/main_bar_bottom_img_3"
+                android:padding="1dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_main_img_3_1"
+                android:layout_above="@+id/activity_main_tv_3"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/small_8dp"
+                android:layout_height="@dimen/small_8dp"
+                android:src="@drawable/ic_red_dot"
+                android:layout_alignRight="@id/activity_main_img_3_1"
+                android:layout_marginRight="@dimen/tiny_4dp"
+                android:layout_marginTop="@dimen/tiny_4dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_weight="1"
+            android:id="@+id/activity_main_lay4"
+            android:onClick="OnClickTab">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/我的"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/activity_main_tv_4"
+                android:textColor="@drawable/main_bar_bottom_text_color"
+                style="@style/HintText"/>
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_height"
+                android:layout_height="@dimen/title_bar_height"
+                android:src="@drawable/main_bar_bottom_img_4"
+                android:padding="1dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/activity_main_img_4_1"
+                android:layout_above="@+id/activity_main_tv_4"/>
+
+            <ImageView
+                android:layout_width="@dimen/small_8dp"
+                android:layout_height="@dimen/small_8dp"
+                android:src="@drawable/ic_red_dot"
+                android:layout_alignRight="@id/activity_main_img_4_1"
+                android:layout_marginRight="@dimen/tiny_4dp"
+                android:layout_marginTop="@dimen/tiny_4dp"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
