@@ -269,6 +269,8 @@ public class FragmentPerformShow extends Fragment {
                 loadData();
             }
         });
+
+        btnLoadMore.setVisibility(View.INVISIBLE);
         return view;
     }
 
@@ -426,6 +428,7 @@ public class FragmentPerformShow extends Fragment {
                 }
 
                 swipeRefreshLayout.setRefreshing(false);
+                btnLoadMore.setVisibility(View.VISIBLE);
                 btnLoadMore.setText("加载更多");
 
             }
@@ -434,6 +437,7 @@ public class FragmentPerformShow extends Fragment {
             public void onFailed(int what, String url, Object tag, Exception exception, int responseCode, long networkMillis) {
                 Toast.makeText(view.getContext(), exception.getMessage(), Toast.LENGTH_SHORT).show();
                 swipeRefreshLayout.setRefreshing(false);
+                btnLoadMore.setVisibility(View.INVISIBLE);
             }
 
             @Override
