@@ -116,6 +116,11 @@ public class FragmentPerformShow extends Fragment {
      */
     public Button btnLoadMore;
 
+    /**
+     * 弹出菜单的滚动位置
+     */
+    private int nPopupPosX;
+
 
     /**
      * 查询所有的帖子
@@ -129,8 +134,13 @@ public class FragmentPerformShow extends Fragment {
     // 用于刷新界面
     private android.os.Handler handler = new android.os.Handler() {
         public void handleMessage(android.os.Message msg) {
-              nestedScrollView.scrollTo(0, msg.what);
+            nestedScrollView.scrollTo(0, msg.what);
+            if (msg.what == (nPopupPosX - 1))
+            {
+                allTypeClick();
+                setToolbarBkg(Integer.MAX_VALUE);
             }
+        }
     };
 
     @Override
@@ -185,10 +195,12 @@ public class FragmentPerformShow extends Fragment {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                nPopupPosX = (int)(linearLayout.getY() - relativeLayout.getHeight());
+
                 new Thread(){
                     @Override
                     public void run() {
-                        for (int i = 0; i<= (int)(linearLayout.getY() - relativeLayout.getHeight()); i++)
+                        for (int i = 0; i<= nPopupPosX; i++)
                         {
                             try {
                                 sleep(1);
@@ -200,9 +212,6 @@ public class FragmentPerformShow extends Fragment {
                         }
                     }
                 }.start();
-
-                setToolbarBkg(Integer.MAX_VALUE);
-                allTypeClick(v);
             }
         });
 
@@ -307,14 +316,9 @@ public class FragmentPerformShow extends Fragment {
 
     }
 
-    public void allTypeClick(View v)
+    public void allTypeClick()
     {
         View view = mInflater.inflate(R.layout.popup_alltype, null, false);
-//        Button btn_xixi = (Button) view.findViewById(R.id.btn_xixi);
-//        Button btn_hehe = (Button) view.findViewById(R.id.btn_hehe);
-
-//        TabLayout tabLayout = (TabLayout)view.findViewById(R.id.tab_popup_alltype_main);
-//        tabLayout.addTab(tabLayout.newTab().setText("呵呵"));
 
         MultiLineTabView multiLineTabView = (MultiLineTabView)view.findViewById(R.id.MultiLineTabView_popup_alltype_main);
         multiLineTabView.setSelectedIndex(nType);
@@ -368,7 +372,7 @@ public class FragmentPerformShow extends Fragment {
 
 
         //设置popupWindow显示的位置，参数依次是参照View，x轴的偏移量，y轴的偏移量
-        popWindow.showAsDropDown(v, 50, 0);
+        popWindow.showAsDropDown(textView, 50, 0);
 
 
         multiLineTabView.setmDelegate(new OnMultiLineTabViewListener() {
