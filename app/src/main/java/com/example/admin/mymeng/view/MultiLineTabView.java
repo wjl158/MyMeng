@@ -81,7 +81,7 @@ public class MultiLineTabView extends LinearLayout {
      */
     public void setSelectedIndex(int n)
     {
-
+        mSelectedIndex = n;
     }
 
     public void setmDelegate(OnMultiLineTabViewListener Delegate)
@@ -104,12 +104,24 @@ public class MultiLineTabView extends LinearLayout {
     }
 
     private void addRowItemLayout(String itemName, int tag){
+
+        //行中的Item布局容器 RelativeLayout
         RelativeLayout relativeLayout = new RelativeLayout(linearLayout.getContext());
         LinearLayout.LayoutParams layoutParams1 = new LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1);
         relativeLayout.setLayoutParams(layoutParams1);
+        relativeLayout.setTag(tag);  //设置tag
         linearLayout.addView(relativeLayout);
 
 
+        relativeLayout.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView tempTV =  (TextView)(((RelativeLayout)v).getChildAt(0));
+                mDelegate.onClick(tempTV.getText().toString(), (Integer)v.getTag());
+            }
+        });
+
+        //文本
         TextView textView = new TextView(linearLayout.getContext());
         RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutParams2.addRule(RelativeLayout.CENTER_HORIZONTAL);
@@ -121,33 +133,41 @@ public class MultiLineTabView extends LinearLayout {
         textView.setTag(tag);
         //这里要注意参数
         textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, mItemTextSize);
-        textView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                for (int i = 0; i < mList.size(); i++)
-                {
-                   int n = mList.keyAt(i);
-                    if (n == (int)v.getTag())
-                    {
-                        ((View)mList.get(n)).setBackgroundColor(Color.parseColor("#FFFFFFFF"));
-                    }
-                    else
-                    {
-                        ((View)mList.get(n)).setBackgroundColor(mItemTextColor);
-                    }
-
-                }
-
-                mDelegate.onClick(v);
-            }
-        });
+//        textView.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                for (int i = 0; i < mList.size(); i++)
+//                {
+//                   int n = mList.keyAt(i);
+//                    if (n == (int)v.getTag())
+//                    {
+//                        ((View)mList.get(n)).setBackgroundColor(Color.parseColor("#FFFFFFFF"));
+//                    }
+//                    else
+//                    {
+//                        ((View)mList.get(n)).setBackgroundColor(mItemTextColor);
+//                    }
+//
+//                }
+//
+//                mDelegate.onClick(v);
+//            }
+//        });
 
 
         relativeLayout.addView(textView, layoutParams2);
 
+        //底部颜色条
         View view = new View(getContext());
-        view.setBackgroundColor(mItemBottomColor);
+        if (mSelectedIndex == tag)
+        {
+            view.setBackgroundColor(mItemBottomColor);
+        }
+        else
+        {
+            view.setBackgroundColor(Color.parseColor("#FFFFFFFF"));
+        }
 
         RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, 4);
         layoutParams3.addRule(RelativeLayout.CENTER_HORIZONTAL);
@@ -170,7 +190,10 @@ public class MultiLineTabView extends LinearLayout {
         if (mCountItem % mColumn == 0)
         {
 
+            //添加行
             addRowLinearLayout();
+
+            //添加行中的Item
             addRowItemLayout(itemName, tag);
         }
         else

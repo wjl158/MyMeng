@@ -9,6 +9,7 @@
     <com.example.admin.mymeng.view.MultiLineTabView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
         android:id="@+id/MultiLineTabView_popup_alltype_main"
         app:column="3"
         app:itemHeight="@dimen/big_32dp"

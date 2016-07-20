@@ -142,6 +142,7 @@ public class FragmentPerformShow extends Fragment {
         tvToolbarText = (TextView)view.findViewById(R.id.fg_performshow_tvPos);
 
         alphaX = 0;
+        nType = 0;
 
         //工具栏
         relativeLayout = (RelativeLayout)view.findViewById(R.id.fg_performshow_toolbar);
@@ -316,6 +317,8 @@ public class FragmentPerformShow extends Fragment {
 //        tabLayout.addTab(tabLayout.newTab().setText("呵呵"));
 
         MultiLineTabView multiLineTabView = (MultiLineTabView)view.findViewById(R.id.MultiLineTabView_popup_alltype_main);
+        multiLineTabView.setSelectedIndex(nType);
+
         multiLineTabView.addItem("全部分类", 0);
         multiLineTabView.addItem("古风", 1);
         multiLineTabView.addItem("动漫", 2);
@@ -339,6 +342,7 @@ public class FragmentPerformShow extends Fragment {
         multiLineTabView.addItem("外语", 15);
         multiLineTabView.addItem("童话", 16);
         multiLineTabView.addItem("连环画", 17);
+
 
 
         //1.构造一个PopupWindow，参数依次是加载的View，宽高
@@ -369,10 +373,9 @@ public class FragmentPerformShow extends Fragment {
 
         multiLineTabView.setmDelegate(new OnMultiLineTabViewListener() {
             @Override
-            public void onClick(View v) {
-                textView.setText(((TextView)v).getText());
-                nType = (int)v.getTag();
-                Log.e("type", "" + nType );
+            public void onClick(String sType, int nTag) {
+                textView.setText(sType);
+                nType = nTag;
                 popWindow.dismiss();
             }
         });
