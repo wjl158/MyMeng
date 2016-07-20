@@ -66,6 +66,8 @@ public class FragmentPerformShow extends Fragment {
 
     private PerformShowAdapter performShowAdapter;
 
+    public RecyclerView recyclerView;
+
     /**
      * main layout
      */
@@ -135,10 +137,10 @@ public class FragmentPerformShow extends Fragment {
     private android.os.Handler handler = new android.os.Handler() {
         public void handleMessage(android.os.Message msg) {
             nestedScrollView.scrollTo(0, msg.what);
+            setToolbarBkg(msg.what);
             if (msg.what == (nPopupPosX - 1))
             {
                 allTypeClick();
-                setToolbarBkg(Integer.MAX_VALUE);
             }
         }
     };
@@ -161,6 +163,9 @@ public class FragmentPerformShow extends Fragment {
         //<!--全部分类 最新 热门导航-->
         LinearLayout linearLayout = (LinearLayout)view.findViewById(R.id.layout_fg_performshow_type);
 
+        //RecyclerView控件
+        recyclerView = (RecyclerView)view.findViewById(R.id.listMain);
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
         //滚动事件
         nestedScrollView = (NestedScrollView)view.findViewById(R.id.fg_performshow_MainScroll);
@@ -170,7 +175,7 @@ public class FragmentPerformShow extends Fragment {
 
                 if (alphaX == 0)
                 {
-                    alphaX = (int)linearLayout.getY() - relativeLayout.getHeight();
+                    alphaX  = (int)recyclerView.getY() - relativeLayout.getHeight() + 50;
                 }
 
                 //滚动时设置工具栏背景透明渐变
@@ -215,9 +220,6 @@ public class FragmentPerformShow extends Fragment {
             }
         });
 
-        //RecyclerView控件
-        RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.listMain);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
 
         mData = new ArrayList<PerfromShowItemData>();
@@ -372,7 +374,7 @@ public class FragmentPerformShow extends Fragment {
 
 
         //设置popupWindow显示的位置，参数依次是参照View，x轴的偏移量，y轴的偏移量
-        popWindow.showAsDropDown(textView, 50, 0);
+        popWindow.showAsDropDown(textView, 0, 2);
 
 
         multiLineTabView.setmDelegate(new OnMultiLineTabViewListener() {

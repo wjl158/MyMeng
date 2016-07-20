@@ -22,8 +22,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:focusableInTouchMode="true"
-                android:focusable="true"
-                android:background="@color/gray_0">
+                android:focusable="true">
 
                 <!--图片轮播   -->
                 <com.jude.rollviewpager.RollPagerView
@@ -227,6 +226,7 @@
                 android:textColor="@color/white"
                 android:alpha="1"
                 android:visibility="invisible"
+                android:textSize="18sp"
 
                 />
         </RelativeLayout>
