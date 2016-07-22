@@ -116,7 +116,7 @@ public class FragmentPerformShow extends Fragment {
     /**
      * 加载更多按钮
      */
-    public Button btnLoadMore;
+    public TextView btnLoadMore;
 
     /**
      * 弹出菜单的滚动位置
@@ -273,7 +273,7 @@ public class FragmentPerformShow extends Fragment {
         });
 
 
-        btnLoadMore = (Button)view.findViewById(R.id.btnLoadMore);
+        btnLoadMore = (TextView)view.findViewById(R.id.btnLoadMore);
         btnLoadMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

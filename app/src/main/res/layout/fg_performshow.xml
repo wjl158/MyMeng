@@ -181,7 +181,7 @@
 
                 </android.support.v7.widget.RecyclerView>
 
-                <Button
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:id="@+id/btnLoadMore"
@@ -189,7 +189,6 @@
                     android:background="@drawable/shape_button_round_corner"
                     android:gravity="center"
                     android:textSize="18sp"
-                    android:layout_margin="10dp"
                     />
 
             </LinearLayout>
