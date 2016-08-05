@@ -117,7 +117,9 @@ public class PerformShowAdapter extends RecyclerView.Adapter<PerformShowAdapter.
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         //1、创建一个ViewHolder 把自己定义的View传递进去
+        //inflate(R.layout.item_show, null, false))不能为inflate(R.layout.item_show, parent, true) 因为ItemView的父控件不是RecyclerView
         MyViewHolder myViewHolder = new MyViewHolder((LinearLayout)LayoutInflater.from(parent.getContext()).inflate(R.layout.item_show, null, false));
+        Log.e("onCreateViewHolder", "onCreateViewHolder++++++++++++++++++++++++++");
         return myViewHolder;
     }
 
